@@ -6,5 +6,6 @@ Bu kod, verilen MD5 şifreli metnin şifresini çözmek için bir sözlük dosya
 Nasıl kullanılır?
 
 "pip install hashlib"  yükleyin
+
 dictionary = Buraya şifreyi çözeceğiniz kodların uzantısını verin. Örnek : dictionary = "C:\Users\handblue\Desktop\denemee.txt" 
 
