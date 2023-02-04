@@ -1,0 +1,18 @@
+import hashlib
+
+def crack_password(hash, dictionary):
+    with open(dictionary, "r") as file:
+        for line in file:
+            word = line.strip()
+            if hashlib.md5(word.encode()).hexdigest() == hash:
+                return word
+    return None
+
+hash = "5f4dcc3b5aa765d61d8327deb882cf99"
+dictionary = "dictionary.txt"
+password = crack_password(hash, dictionary)
+
+if password:
+    print("Password found:", password)
+else:
+    print("Password not found.")
